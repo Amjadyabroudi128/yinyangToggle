@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toggleswitch/main.dart';
+import 'package:toggleswitch/homePage.dart';
 
 void main() {
   runApp(const MyApp());
