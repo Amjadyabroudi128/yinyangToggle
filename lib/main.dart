@@ -15,11 +15,11 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
+    return MaterialApp(
+      theme: ThemeData(
+        brightness: _isDarkMode ? Brightness.dark : Brightness.light
+      ),
       home: CupertinoPageScaffold(
-        navigationBar: CupertinoNavigationBar(
-          middle: Text('Theme Switcher'),
-        ),
         child: Center(
           child: GestureDetector(
             onTap: () {
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
             },
             child: AnimatedContainer(
               duration: Duration(milliseconds: 300),
-              width: 140,
+              width: 100,
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
@@ -63,6 +63,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ),
                   ),
+
                 ],
               ),
             ),
