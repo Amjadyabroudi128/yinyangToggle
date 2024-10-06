@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
             },
             child: AnimatedContainer(
               duration: Duration(milliseconds: 300),
-              width: 100,
+              width: 140,
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
