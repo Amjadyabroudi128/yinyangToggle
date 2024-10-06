@@ -45,19 +45,28 @@ class _MyAppState extends State<MyApp> {
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Container(
-                        width: 40,
+                        width: 50,
                         height: 40,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
-                          color: Colors.white,
+                          color: _isDarkMode ? Colors.white : Colors.black
                         ),
                         child: Center(
-                          child: Icon(
-                            _isDarkMode
-                                ? Icons.nightlight_round
-                                : Icons.wb_sunny,
-                            size: 20,
-                            color: _isDarkMode ? Colors.black : Colors.orange,
+                          child: TweenAnimationBuilder(
+                            tween: Tween(begin: 0.0, end: 1.0),
+                            duration: Duration(seconds: 9),
+                            builder: (context, value, child) {
+                              return Center(
+                                child: Image.asset(
+                                    _isDarkMode ? "images/blackWhite.png" : "images/whiteBlack.png"
+                                ),
+                                // child: value < 1 ? lockIcon : openLock,
+                              );
+                            },
+                            // builder: ,
+                            // child: Image.asset(
+                            //   _isDarkMode ? "images/blackWhite.png" : "images/whiteBlack.png"
+                            // ),
                           ),
                         ),
                       ),
