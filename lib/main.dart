@@ -33,7 +33,7 @@ class _MyAppState extends State<MyApp> {
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
-                color: _isDarkMode ? Colors.black : myGrey,
+                color: _isDarkMode ? myBlack : myGrey,
               ),
               child: Stack(
                 alignment: Alignment.center,
