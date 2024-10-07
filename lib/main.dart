@@ -16,9 +16,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        brightness: _isDarkMode ? Brightness.dark : Brightness.light
-      ),
+      theme: Theme(),
       home: CupertinoPageScaffold(
         child: Center(
           child: GestureDetector(
@@ -81,4 +79,6 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+
+
 }
