@@ -80,5 +80,9 @@ class _MyAppState extends State<MyApp> {
     );
   }
 
-
+  ThemeData Theme() {
+    return ThemeData(
+      brightness: _isDarkMode ? Brightness.dark : Brightness.light
+    );
+  }
 }
