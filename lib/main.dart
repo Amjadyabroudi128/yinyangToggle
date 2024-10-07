@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:toggleswitch/myImages.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,7 +57,7 @@ class _MyAppState extends State<MyApp> {
                             builder: (context, value, child) {
                               return Center(
                                 child: Image.asset(
-                                    _isDarkMode ? "images/blackWhite.png" : "images/whiteBlack.png"
+                                    _isDarkMode ? IconImages.blackWhite : IconImages.whiteBlack
                                 ),
                                 // child: value < 1 ? lockIcon : openLock,
                               );
