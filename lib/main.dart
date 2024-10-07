@@ -2,6 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:toggleswitch/homePage.dart';
 
+void main() {
+  runApp(MyApp());
+}
+
 class MyApp extends StatefulWidget {
   @override
   _MyAppState createState() => _MyAppState();
@@ -10,26 +14,23 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   bool _isDarkMode = false;
 
-  // Function to toggle dark mode
-  void toggleDarkMode() {
+  void toggleButton () {
     setState(() {
       _isDarkMode = !_isDarkMode;
     });
   }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: themeData(),
-      home: homePage(isDarkMode: _isDarkMode, toggleDarkMode: toggleDarkMode,),
+      theme: Theme(),
+      home: homePage(isDarkMode: _isDarkMode, toggleDarkMode: toggleButton,),
     );
   }
 
-  ThemeData themeData() {
+  ThemeData Theme() {
     return ThemeData(
-        brightness: _isDarkMode ? Brightness.dark : Brightness.light
+      brightness: _isDarkMode ? Brightness.dark : Brightness.light
     );
   }
 }
-
