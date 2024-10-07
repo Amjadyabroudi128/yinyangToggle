@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:toggleswitch/consts.dart';
 import 'package:toggleswitch/myImages.dart';
 
 void main() {
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
               height: 50,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(40),
-                color: _isDarkMode ? Colors.black : Colors.grey[300],
+                color: _isDarkMode ? Colors.black : myGrey,
               ),
               child: Stack(
                 alignment: Alignment.center,
