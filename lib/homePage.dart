@@ -47,7 +47,7 @@ class _homePageState extends State<homePage> {
                           color: widget.isDarkMode ? Colors.white : Colors.black),
                       child: Center(
                         child: TweenAnimationBuilder(
-                          tween: Tween(begin: 0.0, end: 1.0),
+                          tween: contAnimation,
                           duration: Duration(seconds: 9),
                           builder: (context, value, child) {
                             return Center(
