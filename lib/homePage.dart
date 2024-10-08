@@ -38,7 +38,7 @@ class _homePageState extends State<homePage> {
                   alignment:
                   widget.isDarkMode ? Alignment.centerRight : Alignment.centerLeft,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 5.0),
+                    padding: const EdgeInsets.only(top: 3, bottom: 3),
                     child: Container(
                       width: 50,
                       height: 40,
