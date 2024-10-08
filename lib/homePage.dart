@@ -24,8 +24,7 @@ class _homePageState extends State<homePage> {
           },
           child: AnimatedContainer(
             duration: MS300,
-            width: MediaQuery.of(context).size.width * 0.39,
-            // width: 140,
+            width: 140,
             height: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(40),
