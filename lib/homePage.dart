@@ -23,7 +23,7 @@ class _homePageState extends State<homePage> {
             widget.toggleDarkMode();
           },
           child: AnimatedContainer(
-            duration: Duration(milliseconds: 300),
+            duration: MS300,
             width: 140,
             height: 50,
             decoration: BoxDecoration(
