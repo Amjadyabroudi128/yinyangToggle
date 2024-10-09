@@ -34,8 +34,9 @@ class _homePageState extends State<homePage> {
               children: [
                 AnimatedAlign(
                   duration: MS300,
-                  alignment:
-                  widget.isDarkMode ? Alignment.centerRight : Alignment.centerLeft,
+                  alignment: align(
+                    widget.isDarkMode ? Alignment.centerRight : Alignment.centerLeft
+                  ),
                   child: Padding(
                     padding: const EdgeInsets.only(top: 3, bottom: 3),
                     child: Container(

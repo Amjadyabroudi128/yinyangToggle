@@ -20,3 +20,7 @@ Decoration containerCircle (Color color) {
     color: color
   );
 }
+// alignments
+AlignmentGeometry align (Alignment alignMe) {
+  return alignMe;
+}
