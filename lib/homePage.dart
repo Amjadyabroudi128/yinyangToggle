@@ -42,9 +42,12 @@ class _homePageState extends State<homePage> {
                     child: Container(
                       width: 50,
                       height: 40,
-                      decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: widget.isDarkMode ? Colors.white : Colors.black),
+                      decoration: animatedDecoration(
+                        widget.isDarkMode ? Colors.white : Colors.black
+                      ),
+                      // decoration: BoxDecoration(
+                      //     shape: BoxShape.circle,
+                      //     color: widget.isDarkMode ? Colors.white : Colors.black),
                       child: Center(
                         child: TweenAnimationBuilder(
                           tween: contAnimation,
