@@ -43,11 +43,8 @@ class _homePageState extends State<homePage> {
                       width: 50,
                       height: 40,
                       decoration: animatedDecoration(
-                        widget.isDarkMode ? Colors.white : Colors.black
+                        widget.isDarkMode ? Colors.white : myBlack
                       ),
-                      // decoration: BoxDecoration(
-                      //     shape: BoxShape.circle,
-                      //     color: widget.isDarkMode ? Colors.white : Colors.black),
                       child: Center(
                         child: TweenAnimationBuilder(
                           tween: contAnimation,
