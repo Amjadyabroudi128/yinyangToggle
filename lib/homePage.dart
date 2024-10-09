@@ -33,7 +33,7 @@ class _homePageState extends State<homePage> {
               alignment: Alignment.center,
               children: [
                 AnimatedAlign(
-                  duration: Duration(milliseconds: 300),
+                  duration: MS300,
                   alignment:
                   widget.isDarkMode ? Alignment.centerRight : Alignment.centerLeft,
                   child: Padding(
