@@ -26,9 +26,8 @@ class _homePageState extends State<homePage> {
             duration: MS300,
             width: 140,
             height: 50,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(40),
-              color: widget.isDarkMode ? myBlack : myGrey,
+            decoration: containerCircle(
+              widget.isDarkMode ? myBlack : myGrey
             ),
             child: Stack(
               alignment: Alignment.center,
