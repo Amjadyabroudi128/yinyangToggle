@@ -7,7 +7,7 @@ Color whiteish = Colors.white;
 // duration
 Duration MS300 = Duration(milliseconds: 300);
 Tween contAnimation = Tween(begin: 0.0, end: 1.0);
-
+Duration secs9 = Duration(seconds: 9);
 //Decoration
 Decoration animatedDecoration(Color color) {
   return BoxDecoration(
