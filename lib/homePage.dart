@@ -48,7 +48,7 @@ class _homePageState extends State<homePage> {
                       child: Center(
                         child: TweenAnimationBuilder(
                           tween: contAnimation,
-                          duration: Duration(seconds: 9),
+                          duration: secs9,
                           builder: (context, value, child) {
                             return Center(
                               child: Image.asset(widget.isDarkMode
